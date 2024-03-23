@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  transition: 0.2s ease all;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-font-color: hsl(0, 0%, 20%);
+  --secondary-font-color: whitesmoke;
+  --header-primary-color: hsl(214, 100%, 69%);
+  --header-color: whitesmoke;
+  --white-background: white;
+  --black-background: hsl(0, 0%, 20%);
+  --box-color: lightgray;
+}
+
+:root.light {
+  --primary-font-color: hsl(0, 0%, 20%);
+  --secondary-font-color: whitesmoke;
+  --header-primary-color: hsl(214, 100%, 69%);
+  --header-color: whitesmoke;
+  --white-background: white;
+  --black-background: hsl(0, 0%, 20%);
+  --box-color: lightgray;
+}
+
+:root.dark {
+  --primary-font-color: whitesmoke;
+  --secondary-font-color: hsl(0, 0%, 20%);
+  --header-primary-color: hsl(214, 47%, 21%);
+  --header-color: whitesmoke;
+  --white-background: hsl(0, 0%, 20%);
+  --black-background: white;
+  --box-color: hsl(0, 0%, 9%);
+}
+
+body {
+  font-weight: 100;
+  color: var(--primary-font-color);
+  font-size: var(--font-size);
+  background-color: var(--secondary-font-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+p {
+  line-height: 28px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-font-color: whitesmoke;
+    --secondary-font-color: hsl(0, 0%, 20%);
+    --header-primary-color: hsl(214, 47%, 21%);
+    --header-color: whitesmoke;
+    --white-background: hsl(0, 0%, 20%);
+    --black-background: white;
+    --box-color: hsl(0, 0%, 9%);
+  }
+}
