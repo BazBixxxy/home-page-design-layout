@@ -20,8 +20,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   header > main > .left img {
@@ -33,7 +33,7 @@
   }
 
   header > main > .right {
-    min-width: 500px;
+    gap: 1rem;
   }
 
   footer > .right > img {
